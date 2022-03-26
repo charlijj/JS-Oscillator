@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+body {
+
+    background-color: black;
+}
+
+.settings {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: 50px;
+    text-align: center;
+    background-color: wheat;
+
+}
+
+.piano-container {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 200px;
+
+}
+
+
+#piano {
+
+    position: absolute;
+    background-color: white;
+    height: 33%;
+    flex-shrink: 2;
+    border: 4px solid lightgreen;
+    overflow-y: hidden;
+
+
+}
+
+
+.piano-key {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    float: left;
+    height: 100%;
+    width: 50px;
+    padding-top: 50px;
+
+    background-color: white;
+    border: 1px solid black;
+    text-align: center;
+    font-weight: bold;
+
+    position: relative;
+
+
+}
+
+.black-note1 {
+
+    height: 50%;
+    width: 20px;
+    z-index: 1;
+    background-color: black;
+    left: 40px;
+    position: absolute;
+    float: left;
+
+}
+.black-note2 {
+
+    height: 50%;
+    width: 20px;
+    z-index: 1;
+    background-color: black;
+    left: 90px;
+    position: absolute;
+    float: left;
+}
+.black-note3 {
+
+    height: 50%;
+    width: 20px;
+    z-index: 1;
+    background-color: black;
+    left: 190px;
+    position: absolute;
+    float: left;
+}
+.black-note4 {
+
+    height: 50%;
+    width: 20px;
+    z-index: 1;
+    background-color: black;
+    left: 240px;
+    position: absolute;
+    float: left;
+}
+.black-note5 {
+
+    height: 50%;
+    width: 20px;
+    z-index: 1;
+    background-color: black;
+    left: 290px;
+    position: absolute;
+    float: left;
+}
+.black-note5 {
+
+    height: 50%;
+    width: 20px;
+    z-index: 1;
+    background-color: black;
+    left: 290px;
+    position: absolute;
+    float: left;
+}
+.black-note6 {
+
+    height: 50%;
+    width: 20px;
+    z-index: 1;
+    background-color: black;
+    left: 390px;
+    position: absolute;
+    float: left;
+}
+.black-note7 {
+
+    height: 50%;
+    width: 20px;
+    z-index: 1;
+    background-color: black;
+    left: 440px;
+    position: absolute;
+    float: left;
+}
+.black-note8 {
+
+    height: 50%;
+    width: 20px;
+    z-index: 1;
+    background-color: black;
+    left: 540px;
+    position: absolute;
+    float: left;
+}
+.black-note9 {
+
+    height: 50%;
+    width: 20px;
+    z-index: 1;
+    background-color: black;
+    left: 590px;
+    position: absolute;
+    float: left;
+}
+.black-note10 {
+
+    height: 50%;
+    width: 20px;
+    z-index: 1;
+    background-color: black;
+    left: 640px;
+    position: absolute;
+    float: left;
+}
+
+.waveformSelect{
+
+    text-align: center;
+}
+
+
+
+
+
+#container {
+
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: black; 
+
+}
+
+#canvas1 {
+
+    height: 75%;
+    width: 100%;
+    position: absolute;
+    top: 1;
+    left: 0;
+}

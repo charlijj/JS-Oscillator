@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="Tone.js" integrity="sha512-nUjml8mN4CNYqBAy0ndDrd8pJV/eTtBNDsnvNtPqozx9/BccUeWSoKW14qWkQUnhuh8E3m+yra3qdzM68lqPEQ==" crossorigin="anonymous"></script>
+    <title>JS Vizulizers</title>
+</head>
+<body>
+
+
+
+    <div id="container">
+        <div class="settings">
+
+            <span>Current waveform: </span>
+            <select name="waveform" id="waveForm" class="waveformSelect">
+              <option value="sine">Sine</option>
+              <option value="square" selected>Square</option>
+              <option value="sawtooth">Sawtooth</option>
+              <option value="triangle">Triangle</option>
+            </select>
+    
+        </div>
+
+        <div class="piano-container">
+            <div id="piano">
+                <div class="black-note1"></div>
+                <div class="black-note2"></div>
+                <div class="black-note3"></div>
+                <div class="black-note4"></div>
+                <div class="black-note5"></div>
+                <div class="black-note6"></div>
+                <div class="black-note7"></div>
+                <div class="black-note8"></div>
+                <div class="black-note9"></div>
+                <div class="black-note10"></div>
+ 
+                <div class="piano-key" id="c3">C3 <br> (Z)</div>
+                <div class="piano-key" id="d3">D3 <br> (X)</div>
+                <div class="piano-key" id="e3">E3 <br> (C)</div>
+                <div class="piano-key" id="f3">F3 <br> (V)</div>
+                <div class="piano-key" id="g3">G3 <br> (B)</div>
+                <div class="piano-key" id="a3">A3 <br> (N)</div>
+                <div class="piano-key" id="b3">B3 <br> (M A)</div>
+                <div class="piano-key" id="c4">C4 <br> (S)</div>
+                <div class="piano-key" id="d4">D4 <br> (D)</div>
+                <div class="piano-key" id="e4">E4 <br> (F)</div>
+                <div class="piano-key" id="f4">F4 <br> (G)</div>
+                <div class="piano-key" id="g4">G4 <br> (H)</div>
+                <div class="piano-key" id="a4">A4 <br> (J)</div>
+                <div class="piano-key" id="b4">B4 <br> (K)</div>
+                <div class="piano-key" id="c5">C5 <br> (L)</div>
+            </div>
+        </div>
+        <canvas id="canvas1"></canvas>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
