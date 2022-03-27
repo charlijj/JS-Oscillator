@@ -11,13 +11,23 @@ body {
 
 .settings {
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 15px 50px;
     width: auto;
     height: 50px;
-    text-align: center;
     background-color: wheat;
+
+}
+
+.waveformSelect {
+    float: left;
+}
+
+
+
+.playDemo {
+
+    text-align: center;
+    float: right;
 
 }
 
@@ -178,10 +188,7 @@ body {
     float: left;
 }
 
-.waveformSelect{
 
-    text-align: center;
-}
 
 
 

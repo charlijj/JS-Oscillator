@@ -1,15 +1,13 @@
 
 document.addEventListener('keydown', function () {
 
-
-  console.log(gainNode.gain.value);
-  noteOn(event.code);
+  noteOn(event.code, event.repeat);
 
 });
 
 
-
-function noteOn (key) {
+let i=0;
+function noteOn (key, repeat) {
 
   gainNode.gain.cancelScheduledValues(audioCtx.currentTime);
 
@@ -126,18 +124,22 @@ function noteOn (key) {
   setTimeout(function () {document.getElementById(active_key).style.backgroundColor = 'white';}, 500);
 
   const osci = audioCtx.createOscillator();
-  console.log(wave);
-  console.log(sustain);
   osci.type = wave;
   osci.frequency.value = note;
 
   osci.connect(gainNode);
   
   gainNode.gain.setValueAtTime(0.33, audioCtx.currentTime);
+
+  
+  console.log('repeat: ' + repeat);
+
   gainNode.gain.linearRampToValueAtTime(0, audioCtx.currentTime + sustain);
   osci.start();
-  setTimeout(function () {osci.stop()}, 550)
-  console.log(gainNode.gain.value);
+  setTimeout(function () {osci.stop()}, 550);
+
+
+
 
 }
 
@@ -161,11 +163,23 @@ let wave;
 wave = 'square';
 
 let sustain;
+
 const waveForm = document.getElementById('waveForm');
 waveForm.value = wave;
 waveForm.onchange = function () {wave = waveForm.value};
-
 console.log("now playing: " + wave);
+
+const playDemo = document.getElementById('playDemo');
+playDemo.addEventListener('click', function () {
+  console.log('playing demo'); 
+  demo.play();
+  if (!demo.paused)
+  {
+    
+  };
+
+
+});
 
 const notelist = {
 
@@ -191,6 +205,8 @@ const notelist = {
 
 // Main audio compenent
 const audioCtx = new AudioContext();
+const demo = new Audio('demo.mp3');
+let audioSource = audioCtx.createMediaElementSource(demo);
 
 // Gain for oscillator
 let gainNode = audioCtx.createGain();
@@ -198,6 +214,7 @@ let gainNode = audioCtx.createGain();
 // Analyzer for drawing graph
 let analyzer = audioCtx.createAnalyser();
 gainNode.connect(analyzer);
+audioSource.connect(analyzer);
 analyzer.connect(audioCtx.destination);
 
 // Half of fftSize, is the number  of bars to be drawn by vizulizer
@@ -212,8 +229,8 @@ let barHeight;
 let x;
 
 
-// ----------------------------------------------------------------------------------
 
+// ----------------------------------------------------------------------------------
 animate();
 
 function animate () {

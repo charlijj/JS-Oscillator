@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="Tone.js" integrity="sha512-nUjml8mN4CNYqBAy0ndDrd8pJV/eTtBNDsnvNtPqozx9/BccUeWSoKW14qWkQUnhuh8E3m+yra3qdzM68lqPEQ==" crossorigin="anonymous"></script>
     <title>JS Vizulizers</title>
 </head>
 <body>
@@ -13,15 +12,22 @@
 
 
     <div id="container">
+
+        
         <div class="settings">
 
-            <span>Current waveform: </span>
-            <select name="waveform" id="waveForm" class="waveformSelect">
-              <option value="sine">Sine</option>
-              <option value="square" selected>Square</option>
-              <option value="sawtooth">Sawtooth</option>
-              <option value="triangle">Triangle</option>
-            </select>
+            <input type="button" id="playDemo" value="Play Demo" class="playDemo">
+            
+            <div class="waveformSelect">
+                <span>Current waveform: </span>
+                <select name="waveform" id="waveForm" style="text-align: center;">
+                    <option value="sine">Sine</option>
+                    <option value="square" selected>Square</option>
+                    <option value="sawtooth">Sawtooth</option>
+                    <option value="triangle">Triangle</option>
+                </select>
+            </div>
+            
     
         </div>
 
