@@ -218,7 +218,7 @@ audioSource.connect(analyzer);
 analyzer.connect(audioCtx.destination);
 
 // Half of fftSize, is the number  of bars to be drawn by vizulizer
-analyzer.fftSize = 256;
+analyzer.fftSize = 1024;
 
 const bufferLen = analyzer.frequencyBinCount;
 
