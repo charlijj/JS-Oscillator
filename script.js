@@ -119,17 +119,16 @@ function noteOn (key, repeat) {
   {
 
     case `sine`:
-      sustain = 0.3;
+      sustain = 0.09;
       break;
-    case `sine`:
-      sustain = 0.3;
+    case `triangle`:
+      sustain = 0.09;
       break;
     default:
       sustain = 0.5;
   }
 
   let timeoutsus = sustain * 1000;
-  console.log(timeoutsus);
   document.getElementById(active_key).style.backgroundColor = `grey`;
   setTimeout(function () {document.getElementById(active_key).style.backgroundColor = `white`;}, timeoutsus);
 
