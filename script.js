@@ -230,7 +230,7 @@ playPauseDemo.addEventListener(`click`, function () {
       console.log(`pausing demo`);
     }
 
-    setTimeout(function () {playPauseDemo.value = `Play Demo`}, 37000);
+    setTimeout(function () {playPauseDemo.value = `Play Demo`}, 38000);
 
 });
 
