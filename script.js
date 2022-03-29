@@ -230,6 +230,8 @@ playPauseDemo.addEventListener(`click`, function () {
       console.log(`pausing demo`);
     }
 
+    setTimeout(function () {playPauseDemo.value = `Play Demo`}, 37000);
+
 });
 
 // Analyzer for drawing graph
