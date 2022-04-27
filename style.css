@@ -76,12 +76,25 @@ body {
 
 }
 
+.black-note{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    color: white;
+    background-color: black;
+    font-size: 10px;
+    
+
+}
+
 .black-note1 {
 
     height: 50%;
     width: 20px;
     z-index: 1;
-    background-color: black;
     left: 40px;
     position: absolute;
     float: left;
@@ -92,7 +105,6 @@ body {
     height: 50%;
     width: 20px;
     z-index: 1;
-    background-color: black;
     left: 90px;
     position: absolute;
     float: left;
@@ -102,7 +114,6 @@ body {
     height: 50%;
     width: 20px;
     z-index: 1;
-    background-color: black;
     left: 190px;
     position: absolute;
     float: left;
@@ -112,7 +123,6 @@ body {
     height: 50%;
     width: 20px;
     z-index: 1;
-    background-color: black;
     left: 240px;
     position: absolute;
     float: left;
@@ -122,7 +132,6 @@ body {
     height: 50%;
     width: 20px;
     z-index: 1;
-    background-color: black;
     left: 290px;
     position: absolute;
     float: left;
@@ -132,7 +141,6 @@ body {
     height: 50%;
     width: 20px;
     z-index: 1;
-    background-color: black;
     left: 290px;
     position: absolute;
     float: left;
@@ -142,7 +150,6 @@ body {
     height: 50%;
     width: 20px;
     z-index: 1;
-    background-color: black;
     left: 390px;
     position: absolute;
     float: left;
@@ -152,7 +159,6 @@ body {
     height: 50%;
     width: 20px;
     z-index: 1;
-    background-color: black;
     left: 440px;
     position: absolute;
     float: left;
@@ -162,7 +168,6 @@ body {
     height: 50%;
     width: 20px;
     z-index: 1;
-    background-color: black;
     left: 540px;
     position: absolute;
     float: left;
@@ -172,7 +177,6 @@ body {
     height: 50%;
     width: 20px;
     z-index: 1;
-    background-color: black;
     left: 590px;
     position: absolute;
     float: left;
@@ -182,16 +186,10 @@ body {
     height: 50%;
     width: 20px;
     z-index: 1;
-    background-color: black;
     left: 640px;
     position: absolute;
     float: left;
 }
-
-
-
-
-
 
 
 #container {

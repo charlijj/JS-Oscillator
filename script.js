@@ -22,7 +22,6 @@ function noteOn (key, repeat) {
   let active_key;
   gainNode.gain.value = 0.33;
 
-  console.log(key);
   let note;
 
   switch (event.code)
@@ -159,7 +158,7 @@ function noteOn (key, repeat) {
       active_key = `c5`;
       break;
     default:
-      console.log(event.code)
+
       alert(`Key has not been mapped yet`);
 
   }
@@ -263,7 +262,7 @@ let gainNode = audioCtx.createGain();
 
 // Gain for Demo
 let demoGain = audioCtx.createGain();
-demoGain.gain.setValueAtTime(0.20, audioCtx.currentTime);
+demoGain.gain.setValueAtTime(0.40, audioCtx.currentTime);
 
 // Waveform dropdown
 const waveForm = document.getElementById(`waveForm`);
