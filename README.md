@@ -4,7 +4,7 @@
 
 
 <h3 align="center">About: </h3>
-<p align="center">This is a web application where a user can play the keyboard using the keys on their keyboard, each key corresponds to a note on the piano.</p>
+<p align="center">A web application where a user can play a oscillator keyboard using the keys on their keyboard, each key corresponds to a note on the piano.</p>
 <br />
 
 <h3 align="center">How to use: </h3>
