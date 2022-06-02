@@ -5,6 +5,7 @@
 
 <h3 align="center">About: </h3>
 <p align="center">A web application where a user can play a oscillator keyboard using the keys on their keyboard, each key corresponds to a note on the piano.</p>
+
 <br />
 
 <h3 align="center">How to use: </h3>
@@ -12,6 +13,7 @@
 <p align="center">Read which key on your keyboard corresponds to which note on the piano</p>
 <p align="center">Play your favorite song</p>
 
+<br />
 
 <h3>Built With: </h3>
 
