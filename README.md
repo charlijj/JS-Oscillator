@@ -9,8 +9,8 @@
 
 <h3 align="center">How to use: </h3>
 <p align="center">Visit: <a href="https://charlijj.github.io/JS-Oscillator/">https://charlijj.github.io/JS-Oscillator/</a></p>
-<p align="center">Read which key on your keyboard coresponds to which note on the piano</p>
-<p align="center">Play your favirot song</p>
+<p align="center">Read which key on your keyboard corresponds to which note on the piano</p>
+<p align="center">Play your favorite song</p>
 
 
 <h3>Built With: </h3>
